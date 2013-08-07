@@ -1,0 +1,49 @@
+i{ padding-right: 4px;}
+li{ list-style:none;}
+.brand{ text-align: center; width:100px;}
+.navbar{ margin-bottom:0;}
+.navbar .nav > li > a{ width:200px; text-align: center; padding:14px 20px 14px; border-left:1px solid #fff; border-right:1px solid #eee;}
+footer p{ text-align: center;}
+.row{ padding:140px 200px; background:url(../img/cs_0002_2.jpg) 0 0 no-repeat; background-size: 100%;}
+.row h1{ font-size: 30px; font-style: italic; color:orange;}
+.info{ font-size: 24px; line-height:3;}
+.btn{ margin-right: 20px;}
+
+.content{ padding:40px 300px;}
+.line{ padding:14px 0; border-bottom:1px solid #d7d7d7;}
+.sidebar{ float:left; margin:0;  width:200px;}
+.sidebar h2{margin:0; font-size: 16px;}
+.line-p{ margin-bottom:0; line-height: 2; overflow: hidden; border-radius:10px; border:1px solid #f7f7f7; background: #f7f7f7; padding: 4px 30px 30px;}
+.line  span{ display: block; color:#000; border-bottom: 1px solid #ccc; margin-bottom: 4px;}
+.line  i{ float:right;}
+.regform{ padding:10px 200px;}
+.post-article form{ padding:0 0 500px;}
+.reg{ padding-left: 40px; font-size: 16px; line-height: 3; border-bottom:1px solid #f89406; margin-bottom: 40px;}
+.reg-btn{ margin-left:340px;}
+
+.post-article{ padding:10px 200px;}
+.text-con{ width:558px; margin-left: 40px;}
+
+.article{ padding: 10px 450px;}
+.article-list h2{ width:100%; font-size:18px;}
+.article-list h2 span{  font-size:14px; font-weight:200; float: right; color:#f8b9b7; background:#f7f7f7; border-radius:4px; line-height: 1.4; padding:2px;}
+.article-list time{ overflow: hidden;}
+.article-list p{ line-height:2;}
+
+.text{ padding:10px 450px;}
+.text h2{ color:orange; font-size: 24px; border-bottom:1px solid red;}
+.text p span{ margin-right:30px;}
+.text p{ line-height: 2;}
+.text textarea{ margin-left: 40px;}
+
+.archive{ padding:40px 450px;}
+.archive h3{ color:orange; border-bottom:1px solid red;}
+.archive ul li{ line-height:3;}
+time{ float: right; color:#f8b9b7; background:#f7f7f7; border-radius:4px; line-height: 1.4; padding:2px;}
+
+.post-article .span2{ margin:0 22px 0 4px;}
+.post-article p{margin-top:10px;}
+
+.tags{ padding:20px 450px;}
+.tags-title{ color:orange; border-bottom:1px solid red; font-size: 30px; font-weight:700; padding-bottom:20px; text-shadow:1px 1px 2px #ccc;}
+.info-bar{ font-size:12px; line-height: 2; color:#aaa;}

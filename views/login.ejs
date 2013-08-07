@@ -1,0 +1,25 @@
+<%- include header %>
+
+<div class="regform">
+    <div class="reg">
+        用户登陆
+    </div>
+    <form class="form-horizontal" method="post">
+        <div class="control-group">
+            <label class="control-label" for="inputEmail">Email:</label>
+            <div class="controls">
+                <input type="text" id="inputEmail" placeholder="Email" name="username">
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="inputPassword">密码:</label>
+            <div class="controls">
+                <input type="password" id="inputPassword" placeholder="Password" name="password">
+            </div>
+        </div>
+        <div class="control-group">
+            <button type="submit" class="btn reg-btn">登录</button>
+        </div>
+    </form>
+</div>
+<%- include footer %>

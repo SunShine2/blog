@@ -1,0 +1,19 @@
+
+
+<%- include header %>
+<div class="text">
+    <h2><%= locals.post.title %></h2>
+    <p><span>by:<a href="/<%= locals.post.user %>"><%= locals.post.user %></a></span><time>写于<%= locals.post.time.minute %></time></span></p>
+    <p>
+        <% locals.post.tags.forEach(function(tag, index){ %>
+        <% if(tag.tag){ %>
+        <a class="btn btn-success btn-small" href="/tags/<%= tag.tag %>"><%= tag.tag %></a>
+        <% } %>
+        <% }) %>
+    </p>
+    <p><%- locals.post.post %></p>
+    <p class="info-bar">阅读：<%= post.pv %> | 评论：<%= post.comments.length %></p>
+    <%- include comment %>
+</div>
+<%- include footer %>
+

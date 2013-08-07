@@ -1,0 +1,18 @@
+<% if(locals.post.comments){ %>
+<% locals.post.comments.forEach(function(comment, index){ %>
+<p><a href="<%= comment.website %>"><%= comment.name %></a>
+    <time>回复于 <%= comment.time %></time></p>
+<p><%- comment.content %></p>
+<% }) %>
+<% } %>
+
+
+<form method="post" class="comment-form">
+    <% if(!locals.user){ %>
+    姓名：<input type="text" name="name" class="span6"/><br />
+    邮箱：<input type="text" name="email" class="span6"/><br />
+    网址：<input type="text" name="website" class="span6"/><br />
+    <% } %>
+    留言：<br /><textarea name="content" rows="9" class="span6"></textarea>
+    <br /><input type="submit" value="留言" class="btn btn-info"/>
+</form>

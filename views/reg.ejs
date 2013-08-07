@@ -1,0 +1,42 @@
+<%- include header %>
+
+<div class="regform">
+<div class="reg">
+    用户注册
+</div>
+    <% if (locals.success) { %>
+    <div class="alert alert-success">
+        <%= locals.success %>
+    </div>
+    <% } %>
+    <% if (locals.error) { %>
+    <div class="alert alert-error">
+        <%= locals.error %>
+    </div>
+    <% } %>
+<form class="form-horizontal" method="post">
+<div class="control-group">
+    <label class="control-label" for="inputUser">用户名:</label>
+    <div class="controls">
+        <input type="text" id="inputUser"  name="username">
+    </div>
+</div>
+<div class="control-group">
+    <label class="control-label" for="inputPassword">密码:</label>
+    <div class="controls">
+        <input type="password" id="inputPassword" placeholder="Password" name="password">
+    </div>
+</div>
+<div class="control-group">
+        <label class="control-label" for="RePassword">重复输入密码:</label>
+        <div class="controls">
+            <input type="password" id="RePassword" placeholder="Password" name="password-repeat">
+        </div>
+</div>
+
+<div class="control-group">
+        <button type="submit" class="btn reg-btn">注册</button>
+</div>
+</form>
+</div>
+<%- include footer %>

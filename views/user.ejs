@@ -1,0 +1,23 @@
+<%- include header %>
+<div class="article">
+    <div class="reg">
+        <%= title %> 的个人中心
+    </div>
+    <div class="article-list">
+        <% locals.posts.forEach(function(post, index){ %>
+        <h2><a href="/<%= post.user %>/<%= post.time.day %>/<%= post.title %>"><%= post.title %></a><span><%- post.time.day %></span></h2>
+        <p>
+            <% post.tags.forEach(function(tag, index){ %>
+            <% if(tag.tag){ %>
+            <a class="btn btn-success btn-small" href="/tags/<%= tag.tag %>"><%= tag.tag %></a>
+            <% } %>
+            <% }) %>
+        </p>
+        <p><%- post.post %></p>
+        <p class="info-bar">阅读：<%= post.pv %> | 评论：<%= post.comments.length %></p>
+        <% }) %>
+    </div>
+    <%- include paging %>
+    <p>asdasda</p>
+</div>
+<%- include footer %>

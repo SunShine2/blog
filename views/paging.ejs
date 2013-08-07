@@ -1,0 +1,9 @@
+<div>
+    <% if(page-1){ %>
+    <span style="float:left"><a title="上一页" href="?p=<%= page-1 %>" class="btn btn-success" style="margin-top:12px;">上一页</a></span>
+    <% } %>
+
+    <% if(postsLen==10){ %>
+    <span style="float:right"><a title="下一页" href="?p=<%= page+1 %>" class="btn btn-success" style="margin-top:12px;">下一页</a></span>
+    <% } %>
+</div>

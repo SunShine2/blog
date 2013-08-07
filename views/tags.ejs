@@ -1,0 +1,11 @@
+<%- include header %>
+<div class="tags">
+    <p class="tags-title">标签</p>
+    <% locals.posts.forEach(function(tag, index){ %>
+    <% if(tag){ %>
+    <a class="btn btn-success" href="/tags/<%= tag %>"><%= tag %></a>
+    <% } %>
+    <% }) %>
+</div>
+
+<%- include footer %>

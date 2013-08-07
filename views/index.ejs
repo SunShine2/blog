@@ -1,0 +1,25 @@
+<%- include header %>
+    <div class="row">
+        <h1>欢迎来到weibo</h1>
+        <p class="info">这是一个基于nodejs的博客系统</p>
+    </div>
+    <div class="content">
+        <% locals.posts.forEach(function(post, index){ %>
+        <div class="line">
+            <div class="sidebar"><h2><a href="/<%= post.user %>"><%= post.user %></a></h2></div>
+            <div class="line-p">
+                <span><a href="/<%= post.user %>/<%= post.time.day  %>/<%= post.title %>"><%= post.title %></a><i><%= post.time.day %></i></span>
+                <p>
+                    <% post.tags.forEach(function(tag, index){ %>
+                    <% if(tag.tag){ %>
+                    <a class="btn btn-success btn-small" href="/tags/<%= tag.tag %>"><%= tag.tag %></a>
+                    <% } %>
+                    <% }) %>
+                </p>
+                <p><%- post.post %></p>
+                <p class="info-bar">阅读：<%= post.pv %> | 评论：<%= post.comments.length %></p>
+            </div>
+        </div>
+        <% }) %>
+ <%- include paging %>
+<%- include footer %>
